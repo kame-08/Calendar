@@ -10,26 +10,20 @@ import SwiftUI
 struct ContentView: View {
     @State var ViewModel = ContentViewModel()
     var body: some View {
-        VStack {
-            
-
-            List {
-                ForEach(ViewModel.data, id: \.self) { reminders in
-                    
-                    
-                    Text(reminders.title)
-                    
+        List {
+            ForEach(ViewModel.data, id: \.self) { reminders in
+                Section {
+                    CalendarColumn(name: reminders.title, start: reminders.startDate, end: reminders.endDate)
                 }
             }
-            .refreshable {
-                //リストの更新
-                ViewModel.predicateForReminders()
-            }
         }
-        .padding()
-        .task {
+        .refreshable {
+            //リストの更新
             ViewModel.predicateForReminders()
         }
+//        .task {
+//            ViewModel.predicateForReminders()
+//        }
     }
 }
 

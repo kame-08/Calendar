@@ -13,6 +13,7 @@
 		2A7115CA2919DEBC00F3BB02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7115C92919DEBC00F3BB02 /* Preview Assets.xcassets */; };
 		2A7115D12919DF0400F3BB02 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7115D02919DF0400F3BB02 /* EventManager.swift */; };
 		2A7115D32919F25900F3BB02 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7115D22919F25900F3BB02 /* ContentViewModel.swift */; };
+		2A7115D5291A1D4500F3BB02 /* CalendarColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7115D4291A1D4500F3BB02 /* CalendarColumn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2A7115C92919DEBC00F3BB02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A7115D02919DF0400F3BB02 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		2A7115D22919F25900F3BB02 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		2A7115D4291A1D4500F3BB02 /* CalendarColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarColumn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				2A7115C22919DEBB00F3BB02 /* CalendarApp.swift */,
 				2A7115C42919DEBB00F3BB02 /* ContentView.swift */,
+				2A7115D4291A1D4500F3BB02 /* CalendarColumn.swift */,
 				2A7115D22919F25900F3BB02 /* ContentViewModel.swift */,
 				2A7115D02919DF0400F3BB02 /* EventManager.swift */,
 				2A7115C62919DEBC00F3BB02 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				2A7115D32919F25900F3BB02 /* ContentViewModel.swift in Sources */,
 				2A7115D12919DF0400F3BB02 /* EventManager.swift in Sources */,
+				2A7115D5291A1D4500F3BB02 /* CalendarColumn.swift in Sources */,
 				2A7115C52919DEBB00F3BB02 /* ContentView.swift in Sources */,
 				2A7115C32919DEBB00F3BB02 /* CalendarApp.swift in Sources */,
 			);
