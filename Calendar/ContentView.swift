@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var ViewModel = ContentViewModel()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+
+            List {
+                ForEach(ViewModel.data, id: \.self) { reminders in
+                    
+                    
+                    Text(reminders.title)
+                    
+                }
+            }
+            .refreshable {
+                //リストの更新
+                ViewModel.predicateForReminders()
+            }
         }
         .padding()
+        .task {
+            ViewModel.predicateForReminders()
+        }
     }
 }
 
